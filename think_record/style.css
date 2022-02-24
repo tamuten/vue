@@ -1,0 +1,40 @@
+body, h1, h2, h3, p {
+    padding:0;
+    margin:0;
+}
+
+.wrapper {
+    padding:0.5rem 1rem;
+}
+
+.date {
+    border-bottom:1px slategray solid;
+}
+
+.date p {
+    font-size:1.2rem;
+}
+
+.post a {
+    border: 1px skyblue solid;
+    height: 80px;
+}
+
+.number {
+    font-size:2.5rem;
+}
+
+.time {
+    font-size:2rem;
+}
+
+.comment {
+    font-size: 0.8rem;
+}
+
+.footer {
+    bottom:0;
+    height:50px;
+    position:fixed;
+    z-index:1;
+}

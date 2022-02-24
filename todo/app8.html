@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js公式チュートリアル</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="fruits-list">
+        <div>
+            <fruits-list-title></fruits-list-title>
+        </div>
+    </div>
+
+</body>
+<script type="text/x-template" id="fruits-list-title">
+    <h1>フルーツ一覧</h1>
+</script>
+<script type="text/javascript">
+    var FruitsListTitle = Vue.extend(
+        {
+            template: '#fruits-list-title'
+        }
+    )
+    new Vue({
+        el: '#fruits-list',
+        components: {
+            'fruits-list-title': FruitsListTitle
+        }
+    })
+</script>
+
+</html>
